@@ -1,0 +1,62 @@
+.sidebar {
+  width: 250px; /* Example sidebar width */
+  padding: 20px; /* Inner padding for the sidebar */
+  background-color: #f8f8f8; /* Background color for the sidebar */
+  border-right: 1px solid #ddd; /* Right border for visual separation */
+  height: 100vh; /* Full height sidebar */
+}
+
+.users {
+  width: 100%;
+  max-width: 800px; /* Adjust width for larger screens */
+  margin: 20px auto;
+  min-height: 80vh;
+  border: solid gray 1px; /* Outer border for the user table */
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px; /* Inner padding for table content */
+  background-color: #fff; /* Background color for clarity */
+  border-radius: 10px; /* Optional: rounded corners for aesthetics */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  margin-left: 20px; /* Add left margin to create a gap from the sidebar */
+
+  @media (max-width: 768px) {
+    width: 90%; /* Responsive width on smaller screens */
+    margin: 10px auto; /* Adjust margin for smaller screens */
+  }
+}
+
+.table-container {
+  padding: 10px; /* Add space between the sidebar and table */
+}
+
+table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Remove spacing between cells */
+}
+
+th,
+td {
+  padding: 12px; /* Add padding for table cells */
+  text-align: left; /* Left align text */
+  border-bottom: 1px solid #ddd; /* Add bottom border for separation */
+}
+
+th {
+  background-color: #f2f2f2; /* Header background color */
+  font-weight: bold; /* Bold header text */
+}
+
+.common-btn {
+  padding: 5px 10px; /* Adjust button padding */
+  background-color: #8a4baf; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.common-btn:hover {
+  background-color: #7b3f9e; /* Darker shade on hover */
+}

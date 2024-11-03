@@ -1,0 +1,74 @@
+.admin-courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 20px;
+
+  .left {
+    flex: 1; /* Allow it to take available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items in the left sidebar */
+
+    .title {
+      margin-bottom: 20px; /* Gap below the title */
+      h1 {
+        font-size: 28px;
+        color: #8a4baf;
+        text-align: center; /* Center the title text */
+      }
+    }
+
+    .dashboard-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px; /* Space between course cards */
+      margin-top: 20px; /* Additional space above the course cards */
+      margin-left: 5px; /* Maintain margin on the left */
+    }
+  }
+
+  .right {
+    .add-course {
+      margin-left: 20px; /* Create a gap between sidebar and form */
+      
+      .course-form {
+        background-color: #fff;
+        padding: 15px; /* Further reduced padding */
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 220px; /* Reduced width for a smaller form */
+
+        h2 {
+          font-size: 22px; /* Slightly smaller font size */
+          color: #8a4baf;
+          margin-bottom: 10px; /* Less margin below the title */
+        }
+
+        form {
+          text-align: left;
+
+          label {
+            display: block;
+            margin-bottom: 3px; /* Less margin below labels */
+            font-size: 14px; /* Smaller label font size */
+            color: #333;
+          }
+
+          input,
+          select {
+            width: 92%;
+            padding: 6px; /* Smaller padding for inputs */
+            margin-bottom: 8px; /* Less space below inputs */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px; /* Smaller font size for inputs */
+          }
+        }
+      }
+    }
+  }
+}
