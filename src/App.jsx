@@ -10,7 +10,7 @@ import Footer from './components/footer/Footer';
 import About from './pages/about/About';
 import Account from './pages/account/Account';
 import { UserData } from './context/UserContext';
-import Loading from './components/loading/loading';
+import Loading from './components/loading/Loading';
 import Courses from './pages/courses/Courses';
 import CourseDescription from "./pages/coursedescription/CourseDescription";
 import PaymentSuccess from "./pages/paymentsuccess/PaymentSuccess";
